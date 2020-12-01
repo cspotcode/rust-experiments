@@ -25,8 +25,8 @@ jobs:
         with:
           use-cross: true
           command: build
-          args: --release --target=${{ matrix.target }}
-          working-directory: exec-capture-output
+          args: --release --target=${{ matrix.target }} --manifest-path ./exec-capture-output/Cargo.toml
+          # working-directory: exec-capture-output
       - uses: actions/upload-artifact@v2
         with:
           name: exec-capture-output
