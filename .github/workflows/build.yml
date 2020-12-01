@@ -26,7 +26,7 @@ jobs:
           use-cross: true
           command: build
           args: --release --target=${{ matrix.target }}
-          working-directory: 
+          working-directory: exec-capture-output
       - uses: actions/upload-artifact@v2
         with:
           name: exec-capture-output
