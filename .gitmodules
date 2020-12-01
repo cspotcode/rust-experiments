@@ -1,0 +1,3 @@
+[submodule "rust-cli-boilerplate"]
+	path = rust-cli-boilerplate
+	url = ./rust-cli-boilerplate/
